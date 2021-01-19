@@ -1,0 +1,27 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 605.815 sec <<< FAILURE!
+beforeTest(example.NewTest)  Time elapsed: 605.72 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: session not created
+from timeout: Timed out receiving message from renderer: 600.000
+  (Session info: chrome=87.0.4280.141)
+  (Driver info: chromedriver=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 603.66 seconds
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'CPU106', ip: '192.168.20.187', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:139)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:171)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
+	at example.NewTest.beforeTest(NewTest.java:22)
